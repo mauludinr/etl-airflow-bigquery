@@ -21,17 +21,22 @@
       
       ![image](https://user-images.githubusercontent.com/38213112/143734679-a2e457ef-b5f3-402d-9151-fc37eca9f972.png)
 
-   -  Add a new record(variable) by clicking the plus (+) icon. Another way is just import variables by creating a json file that contain key value of variables. Like this :
+   -  Add a new record(variable) by clicking the plus (+) icon. Another way is just import variables by creating a json file that contain key value of variables. Like this:
    ```
    {
    "PROJECT_ID": "",
    "BUCKET_NAME": "",
    "GCS_TEMP_LOCATION": "",
-   "GCS_STG_LOCATION": ""
+   "GCS_STG_LOCATION": "",
+   "DATASET_ID": ""
    }
    ```
+      -  PROJECT_ID : your Google Cloud Platfrom project id
+      -  BUCKET_NAME : your GCS bucket name
+      -  GCS_TEMP_LOCATION: your temp location (gs://<yourbucket>/temp)
+      -  GCS_STG_LOCATION: your staging data location (gs://<yourbucket>/stag)
    -  You can access your variable from your DAG. Example :
-   ```
+   ```python
    from airflow.models.variable import Variable
 
    PROJECT_ID = Variable.get("PROJECT_ID")
@@ -47,6 +52,7 @@
       ```
       (*https://airflow.apache.org/docs/apache-airflow-providers-google/stable/index.html)
    -  Go access your airflow UI (http://localhost:8080), then go to Connections in Admin menu
+   
       ![image](https://user-images.githubusercontent.com/38213112/143735271-d6e9ee38-c5ac-488a-94e3-7eeffefb18aa.png)
 
    -  Add or Edit current Connection. Search for Google Cloud conn type, then fill some required fields:
@@ -58,6 +64,7 @@
       -  Number of Retries
       -  Project Id
       -  Click Save button
+      
       ![image](https://user-images.githubusercontent.com/38213112/143736053-4cae6351-272e-4fd2-a9de-466c50fcd57c.png)
 
 3) Install other packages 
@@ -66,7 +73,6 @@
     pip install beam-sql-connector==1.8.5
     pip install apache-airflow-providers-apache-beam
     ```
-
 ## Execute
 1) Run airflow webserver --port 8080 -D in your terminal 
 2) Run airflow scheduler in your terminal 
