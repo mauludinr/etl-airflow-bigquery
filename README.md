@@ -77,3 +77,10 @@
 1) Run airflow webserver --port 8080 -D in your terminal 
 2) Run airflow scheduler in your terminal 
 3) Go access your airflow UI (http://127.0.0.1/8080)
+
+   ![image](https://user-images.githubusercontent.com/38213112/143780470-2395508f-5870-4dab-bb38-4617f57e0c54.png)
+   
+   ![image](https://user-images.githubusercontent.com/38213112/143780555-d228a661-5b95-419b-a6d6-58a94f3248a8.png)
+
+   ![image](https://user-images.githubusercontent.com/38213112/143780610-b2c9b9eb-1296-43d2-a56f-9d0ffe317a9f.png)
+
