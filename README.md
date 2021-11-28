@@ -33,8 +33,8 @@
       ```
        -  PROJECT_ID : your Google Cloud Platfrom project id
        -  BUCKET_NAME : your GCS bucket name
-       -  GCS_TEMP_LOCATION: your temp location (gs://<yourbucket>/temp)
-       -  GCS_STG_LOCATION: your staging data location (gs://<yourbucket>/stag)
+       -  GCS_TEMP_LOCATION: your temp location (gs://{yourbucket}/temp)
+       -  GCS_STG_LOCATION: your staging data location (gs://{yourbucket}/stag)
    -  You can access your variable from your DAG. Example :
    ```python
    from airflow.models.variable import Variable
