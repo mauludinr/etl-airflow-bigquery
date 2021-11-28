@@ -22,19 +22,19 @@
       ![image](https://user-images.githubusercontent.com/38213112/143734679-a2e457ef-b5f3-402d-9151-fc37eca9f972.png)
 
    -  Add a new record(variable) by clicking the plus (+) icon. Another way is just import variables by creating a json file that contain key value of variables. Like this:
-   ```
-   {
-   "PROJECT_ID": "",
-   "BUCKET_NAME": "",
-   "GCS_TEMP_LOCATION": "",
-   "GCS_STG_LOCATION": "",
-   "DATASET_ID": ""
-   }
-   ```
-      -  PROJECT_ID : your Google Cloud Platfrom project id
-      -  BUCKET_NAME : your GCS bucket name
-      -  GCS_TEMP_LOCATION: your temp location (gs://<yourbucket>/temp)
-      -  GCS_STG_LOCATION: your staging data location (gs://<yourbucket>/stag)
+      ```
+      {
+      "PROJECT_ID": "",
+      "BUCKET_NAME": "",
+      "GCS_TEMP_LOCATION": "",
+      "GCS_STG_LOCATION": "",
+      "DATASET_ID": ""
+      }
+      ```
+       -  PROJECT_ID : your Google Cloud Platfrom project id
+       -  BUCKET_NAME : your GCS bucket name
+       -  GCS_TEMP_LOCATION: your temp location (gs://<yourbucket>/temp)
+       -  GCS_STG_LOCATION: your staging data location (gs://<yourbucket>/stag)
    -  You can access your variable from your DAG. Example :
    ```python
    from airflow.models.variable import Variable
