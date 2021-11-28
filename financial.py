@@ -36,6 +36,7 @@ def run(argv=None):
        'client_id:INTEGER,gender:STRING,birth_date:DATE,district_id:INTEGER',
        'disp_id:INTEGER,client_id:INTEGER,account_id:INTEGER,type:STRING',
        'district_id:INTEGER,A2:STRING,A3:STRING,A4:INTEGER,A5:INTEGER,A6:INTEGER,A7:INTEGER,A8:INTEGER,A9:INTEGER,A10:FLOAT,A11:INTEGER,A12:FLOAT,A13:FLOAT,A14:INTEGER,<NTEGER,A15:FLOAT,A16:INTEGER',   
+       'loan_id:INTEGER,account_id:INTEGER,date:DATE,amount:INTEGER,duration:INTEGER,payments:FLOAT,status:STRING',  
        'order_id:INTEGER,account_id:INTEGER,bank_to:STRING,account_to:INTEGER,amount:FLOAT,k_symbol:STRING',
        'trans_id:INTEGER,account_id:INTEGER,date:DATE,type:STRING,operation:STRING,amount:INTEGER,balance:INTEGER,k_symbol:STRING,bank:STRING,account:FLOAT'
       ]
