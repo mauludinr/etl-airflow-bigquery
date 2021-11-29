@@ -120,3 +120,8 @@
  
    ![image](https://user-images.githubusercontent.com/38213112/143898013-7621b1e2-d77d-48f6-bdde-a9f6ec248cf1.png)
    
+6) Data stored in BigQuery
+  
+   ![image](https://user-images.githubusercontent.com/38213112/143899219-335d0a8c-2305-406d-987e-88427b340383.png)
+
+  
