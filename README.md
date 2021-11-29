@@ -4,6 +4,7 @@
 1) Airflow v2.2.1
 2) Python v3.8.10
 3) Other Packages
+4) Ubuntu
    
 ## Data
 1) Dataset : https://relational.fit.cvut.cz/dataset/Financial. 
