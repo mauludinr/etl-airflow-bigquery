@@ -24,7 +24,7 @@ dag= DAG(
     dag_id = "dag_sql_to_bq",
     default_args=default_args,
     catchup=False,
-    schedule_interval='0 20 * * *',
+    schedule_interval='0 03 * * *',
     tags=['financial','loan','relational_fit']
 )
 
