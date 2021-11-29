@@ -89,7 +89,7 @@
 
    ![image](https://user-images.githubusercontent.com/38213112/143780470-2395508f-5870-4dab-bb38-4617f57e0c54.png)
 
-2) Dag Airflow that I created use BeamRunPythonPipelineOperator to trigger ApacheBeam script, then it will run Dataflow Jobs
+2) Dag Airflow that I created use BeamRunPythonPipelineOperator to trigger ApacheBeam script(financial.py) with additional setup file(setup.py), then it will run Dataflow Jobs with worker thas has installed packages such as (beam-sql-connector) from setup.py file (*see requirement packages inside setup.py file)
 
    ![image](https://user-images.githubusercontent.com/38213112/143780555-d228a661-5b95-419b-a6d6-58a94f3248a8.png)
    
