@@ -24,8 +24,8 @@ dag= DAG(
     dag_id = "dag_sql_to_bq",
     default_args=default_args,
     catchup=False,
-    #Because i want to start this at 08:00 PM UTC at airflow timezone, i need to set the schedule to 01:00 PM based on my local timezone in WIB(+07:00) 
-    schedule_interval='0 13 * * *',
+    #I want to start this dag at 08:00 PM UTC at airflow timezone
+    schedule_interval='0 20 * * *',
     tags=['financial','loan','relational_fit']
 )
 
